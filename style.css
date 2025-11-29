@@ -88,10 +88,10 @@ body {
     transform: scale(1.05);
   }
 
-  .main{
+  /* .main{
     width: 1200px;
     margin: auto;
-}
+} */
 
 .slideshow-container {
     max-width: 50%;
