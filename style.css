@@ -88,15 +88,22 @@ body {
     transform: scale(1.05);
   }
 
-  /* .main{
+  .main{
     width: 1200px;
     margin: auto;
-} */
+}
+
+.container{
+  width: 1200px;
+  margin: auto;
+}
 
 .slideshow-container {
     max-width: 50%;
     max-width: 50%;
     position: relative;
+   
+    width: 1200px;
     margin: auto;
   }
 
