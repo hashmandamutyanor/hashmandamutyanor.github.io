@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Միջնադարյան Հայաստանի Թատրոն</title>
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<div class="main">
+<body>
+  <audio autoplay loop>
+
+   
+  </audio>
+
+  <header>
+    <h1>Հաշմանդամների միջազգային օր</h1>
+    <p> Թերի Ֆոքս</p>
+  </header>
+
+  <nav>
+  
+    <a href="index.html">ԳլԽավոր</a>
+    <a href="Ռեյ Չարլզ.html">Ռեյ Չարլզ </a>
+    <a href="Հելեն Քելլեր.html">Հելեն Քելլեր</a>
+    <a href="Սթիվի Ուանդեր.html">Սթիվի Ուանդեր </a>
+    <a href="Նիկ Վույչիչ.html">Նիկ Վույչիչ</a>
+    <a href="Լուի Բրայել.html">Լուի Բրայել </a>
+    <a href="Ջեսիկա Կոքս.html">Ջեսիկա Կոքս </a>
+    <a href="Սթիվեն Հոքինգ.html">Սթիվեն Հոքինգ </a>
+    <a href="Թերի Ֆոքս.html">Թերի Ֆոքս</a>
+
+
+
+
+
+
+  </nav>
+
+
+</div>
+<div class="container">
+    <div class="content-box" 
+         style="background:white; padding:20px; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1); display:flex; gap:20px; align-items:center;">
+
+        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9exxHMxHpwtwZAsMHoG4blP66KkIQXMw3gHt7oVcME9ZIXJBX-Hmkf4IqfutkR5J-UJhUGUAUAC5SQ0xWUfzX409G2OILy_E44PoPMzHD&s=10" 
+             style="width:280px; border-radius:10px;">
+
+        <div style="font-size:18px; line-height:1.6;">
+            <p><b>Հայաստանի hերոս, որը Արցախյան մարտական գործողությունների ժամանակ (2014) ծանր վիրավորվեց։ Կորցրեց երկու ոտքն ու աջ ձեռքը։
+                Բայց նա չհանձնվեց․
+                <li>դարձավ միջազգային պարաբազկամարտի աշխարհի բազմակի չեմպիոն</li>	
+                <li>մարզում է վիրավոր զինվորներին</li>	
+                <li>աջակցում է հարյուրավոր վերականգնվող հերոսների</li>	
+                
+                
+                
+                </p>
+
+           </p>
+        </div>
+
+    </div>
+</div>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNjLY2EOBauAZw7ZO6MOzdFgIm2b4WOioPN4FNlWrtXxaAarNRK5Y8dpKL8Fskw3DzUvav3FKEmmyoG-8gOSDJCdqorUlEdMQ3FM_JPytAA&s=10" style="width:100%;   height: 50%; margin: auto;  box-shadow: 2px 2px 13px 0px gray;">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaf4QACuwDcDKkxOaR_yN_vEAd-PzVRelKtdU4t8vH263bQedWbbEddM4ulcOBkHNI8oGg5_rKZD77GA3ZitZFFLwEEjh1a5upVEjPkQncug&s=10" style="width:100%;  height: 50%; box-shadow: 2px 2px 13px 0px gray;">
+      <div class="text"></div>
+    </div>
+    
+
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div><br>
+
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000);
+    }
+    </script>
+    <script>
+        const searchInput = document.getElementById('searchInput');const searchButton = document.getElementById('searchButton');
+const searchResultsContainer = document.getElementById('searchResults');
+searchButton.addEventListener('click', () => {  const query = searchInput.value;
+fetch(`/search?q=${query}`)    .then(response => response.json())
+.then(data => {      // Process the search results
+  displaySearchResults(data);    })
+.catch(error => {      console.error('An error occurred during the search:', error);
+});});
+function displaySearchResults(results) {
+// Clear any previous search results  searchResultsContainer.innerHTML = '';
+// Create HTML elements to display the search results
+for (const result of results) {    const resultItem = document.createElement('div');
+resultItem.innerText = result.title;    searchResultsContainer.appendChild(resultItem);
+}}
+    </script>
+
+<script src="script.js"></script></div>
+</body>
+</html>
